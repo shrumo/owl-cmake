@@ -1,6 +1,6 @@
 # owl-cmake
 
-[![Build Status](https://travis-ci.com/shrumo/owl-cmake.svg?branch=master)](https://travis-ci.com/shrumo/owl-cmake)
+[![Build Status](https://travis-ci.com/shrumo/owl-cmake.svg?branch=main)](https://travis-ci.com/shrumo/owl-cmake)
 
 This provides convenient wrapper for [owl parser generator](https://github.com/ianh/owl).
 
