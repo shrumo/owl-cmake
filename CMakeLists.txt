@@ -33,7 +33,8 @@ endif()
 # Example:
 #   owl_generate_header(C.owl) # produces C.owl.h file in the same place the original C.owl resides
 function(owl_generate_header grammar_file_path)
-    add_custom_command(OUTPUT "${grammar_file_path}.h"
+    get_filename_component(absolute_grammar_file_path ${grammar_file_path} ABSOLUTE)
+    add_custom_command(OUTPUT "${absolute_grammar_file_path}.h"
                        DEPENDS "${grammar_file_path}"
                        COMMAND owl -c ${grammar_file_path} -o ${grammar_file_path}.h
                        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
